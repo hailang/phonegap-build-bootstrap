@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns		= "http://www.w3.org/ns/widgets"
 	xmlns:gap	= "http://phonegap.com/ns/1.0"
-	id		= "com.you.www"
-	version 	= "1.0.0">
+	id		= "my.edu.apiit"
+	version 	= "0.0.1">
 
-	<name>Your Mind Blowing App</name>
+	<name>PointCow Design Demo</name>
 
 	<description>
-		A brilliant mobile application written by you and now available on every platform thanks to Kendo UI Mobile and PhoneGap Build.
+		PointCow Design Demo
 	</description>
 
-	<author href="build.phonegap.com"
-		email="">
-		Mr. Mobile Madness
+	<author href="hailang.me"
+		email="hailang@apu.edu.my">
+		Hai Lang
 	</author>
 
 	<icon src="icon.png" gap:role="default" />
