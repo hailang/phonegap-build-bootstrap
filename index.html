@@ -1,52 +1,47 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width" />
-		<title></title>
-		
-		<link rel="stylesheet" href="assets/css/kendo.mobile.all.min.css" rel="stylesheet">
-		<link rel="stylesheet" href="assets/css/master.css">
-
-		<script type="text/javascript" src="assets/js/jquery.min.js"></script>
-		<script type="text/javascript" src="assets/js/kendo.all.min.js"></script>
-		<script type="text/javascript" src="assets/js/app.js"></script>
-		
-		<script src="phonegap.js" type="text/javascript" charset="utf-8"></script>
-	</head>
+<head>
+    <title>PointCow Design Demo</title>
+    <link rel="stylesheet" href="assets/css/kendo.mobile.all.min.css">
+</head>
+<body>
+	<!-- Define Views -->
+	<div data-role="view" data-layout="default_layout" id="wallet">
+	    This is default My Wallet Page!
+	</div>
+	<div data-role="view" data-layout="default_layout" id="gifts">
+	    This is second Earn Gifts Page!
+	</div>
+	<!-- ++++++++++++ -->
 	
-	<body>
-		<div data-role="layout" data-id="main-layout"> 
-			<div data-role="header"> 
-				<div data-role="navbar">
-					<span data-role="view-title"></span>
-				</div>
-			</div> 
-			<div data-role="footer"> 
-				<div data-role="tabstrip">
-		        	<a href="#home" data-icon="home">My Wallet</a>
-		        	<a href="#gifts" data-icon="favorites">Earn Gifts</a> 
-					<a href="#shop" data-icon="cart">Go Shop</a> 
-					<a href="#community" data-icon="globe">Community</a> 
-					<a href="#settings" data-icon="settings">Settings</a>
-				</div> 
-			</div> 
-		</div>
-		
-		<div data-role="view" data-show="MYAPP.show" data-layout="main-layout" data-title="Wallet" id="home"> 
-			<ul id="wallet">My Wallet</ul> 
-		</div> 
-		<div data-role="view" data-layout="main-layout" data-title="Gifts" id="gifts"> 
-			<ul id="gifts">Earn Gifts</ul> 
-		</div> 
-		<div data-role="view" data-layout="main-layout" data-title="Shop" id="shop"> 
-			<ul id="shop">Go Shop</ul> 
-		</div> 
-		<div data-role="view" data-layout="main-layout" data-title="Community" id="community"> 
-			<ul id="community">Community</ul> 
-		</div>
-		<div data-role="view" data-layout="main-layout" data-title="Settings" id="settings"> 
-			<ul id="settings">Settings</ul> 
-		</div>
-		
-	</body>
+	<!-- Define Layout -->
+	<section data-role="layout" data-id="default_layout">
+	        <header data-role="header">
+	            <div data-role="navbar">PointCow Design Demo</div>
+	        </header>
+	        <!-- Render Views Here -->
+	        <footer data-role="footer">
+	            <div data-role="tabstrip">
+	                <a href="#wallet" data-icon="home">My Wallet</a>
+					<a href="#gifts" data-icon="favorites">Earn Gifts</a>
+	            </div> 
+	        </footer>
+			<!-- ++++++++++++ -->
+	</section>
+	<!-- ++++++++++++ -->
+	
+	
+    <script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/kendo.all.min.js"></script>
+	<script src="phonegap.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+	    var app = new kendo.mobile.Application(document.body, 
+		{
+		    //transition:'slide'
+			platform:'android'
+		});
+	</script>
+</body>
 </html>
+		
+		
