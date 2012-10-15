@@ -2,35 +2,52 @@
 <html>
 <head>
     <title>PointCow Design Demo</title>
+	<!-- Stylesheets -->
     <link rel="stylesheet" href="assets/css/kendo.mobile.all.min.css">
+	<!-- ++++++++++++ -->
 </head>
+
 <body>
 	<!-- Define Views -->
-	<div data-role="view" data-layout="default_layout" id="wallet">
+	<div data-role="view" data-layout="default_layout" data-title="My Wallet" id="wallet">
 	    This is default My Wallet Page!
 	</div>
-	<div data-role="view" data-layout="default_layout" id="gifts">
+	<div data-role="view" data-layout="default_layout" data-title="Earn Gifts" id="gifts">
 	    This is second Earn Gifts Page!
+	</div>
+	<div data-role="view" data-layout="default_layout" data-title="Go Shop" id="shop">
+	    This is third Go Shop Page!
+	</div>
+	<div data-role="view" data-layout="default_layout" data-title="Community" id="community">
+	    This is forth Community Page!
+	</div>
+	<div data-role="view" data-layout="default_layout" data-title="Settings" id="settings">
+	    This is last Settings Page!
 	</div>
 	<!-- ++++++++++++ -->
 	
 	<!-- Define Layout -->
 	<section data-role="layout" data-id="default_layout">
 	        <header data-role="header">
-	            <div data-role="navbar">PointCow Design Demo</div>
+	            <div data-role="navbar">
+					<span data-role="view-title"></span>
+				</div>
 	        </header>
 	        <!-- Render Views Here -->
 	        <footer data-role="footer">
 	            <div data-role="tabstrip">
 	                <a href="#wallet" data-icon="home">My Wallet</a>
 					<a href="#gifts" data-icon="favorites">Earn Gifts</a>
+					<a href="#shop" data-icon="cart">Go Shop</a>
+					<a href="#community" data-icon="globe">Community</a>
+					<a href="#settings" data-icon="settings">Settings</a>
 	            </div> 
 	        </footer>
 			<!-- ++++++++++++ -->
 	</section>
 	<!-- ++++++++++++ -->
 	
-	
+	<!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/kendo.all.min.js"></script>
 	<script src="phonegap.js" type="text/javascript" charset="utf-8"></script>
@@ -41,6 +58,7 @@
 			//platform:'android'
 		});
 	</script>
+	<!-- ++++++++++++ -->
 </body>
 </html>
 		
