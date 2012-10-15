@@ -15,61 +15,38 @@
 	</head>
 	
 	<body>
-		<!--
- 		<div data-role="view" data-show="MYAPP.show" data-layout="app" data-title="wallet" id="wallet"> 
-			<ul id="wallet">My Wallet</ul> 
-		</div> 
-		<div data-role="view" data-layout="app" data-title="gifts" id="gifts"> 
-			<ul id="gifts">Earn Gifts</ul> 
-		</div> 
-		<div data-role="view" data-layout="app" data-title="shop" id="shop"> 
-			<ul id="shop">Go Shop</ul> 
-		</div> 
-		<div data-role="view" data-layout="app" data-title="community" id="community"> 
-			<ul id="community">Community</ul> 
-		</div>
-		<div data-role="view" data-layout="app" data-title="settings" id="settings"> 
-			<ul id="settings">Settings</ul> 
-		</div> 
-		
-		<div data-role="layout" data-id="app"> 
-			<header data-role="header"> 
-				<div data-role="navbar">PointCow Demo Design</div> 
-			</header> 
-			<footer data-role="footer"> 
-				<div data-role="tabstrip">
-		        	<a href="#wallet" data-icon="home">My Wallet</a>
-		        	<a href="#gifts" data-icon="favorites">Earn Gifts</a> 
-					<a href="#shop" data-icon="cart">Go Shop</a> 
-					<a href="#community" data-icon="globe">Community</a> 
-					<a href="#settings" data-icon="settings">Settings</a> 
-				</div> 
-			</footer> 
-		</div>
-		-->
-		
-		
-		<div data-role="layout" data-id="main-layout">
-			<div data-role="header">
+		<div data-role="layout" data-id="main-layout"> 
+			<div data-role="header"> 
 				<div data-role="navbar">
 					<span data-role="view-title"></span>
 				</div>
-			</div>
-			<div data-role="footer">
+			</div> 
+			<div data-role="footer"> 
 				<div data-role="tabstrip">
-					<a data-icon="home" href="#home">Home</a>
-					<a data-icon="settings" href="#settings">Settings</a>
-				</div>
-			</div>
+		        	<a href="#home" data-icon="home">My Wallet</a>
+		        	<a href="#gifts" data-icon="favorites">Earn Gifts</a> 
+					<a href="#shop" data-icon="cart">Go Shop</a> 
+					<a href="#community" data-icon="globe">Community</a> 
+					<a href="#settings" data-icon="settings">Settings</a>
+				</div> 
+			</div> 
 		</div>
-
-		<div data-role="view" data-show="MYAPP.show" data-layout="main-layout" id="home" data-title="Home">
-			<p>Home</p>
+		
+		<div data-role="view" data-show="MYAPP.show" data-layout="main-layout" data-title="Wallet" id="home"> 
+			<ul id="wallet">My Wallet</ul> 
+		</div> 
+		<div data-role="view" data-layout="main-layout" data-title="Gifts" id="gifts"> 
+			<ul id="gifts">Earn Gifts</ul> 
+		</div> 
+		<div data-role="view" data-layout="main-layout" data-title="Shop" id="shop"> 
+			<ul id="shop">Go Shop</ul> 
+		</div> 
+		<div data-role="view" data-layout="main-layout" data-title="Community" id="community"> 
+			<ul id="community">Community</ul> 
 		</div>
-
-		<div data-role="view" data-layout="main-layout" id="settings" data-title="Settings">
-			<p>Settings</p>
-		</div>	
+		<div data-role="view" data-layout="main-layout" data-title="Settings" id="settings"> 
+			<ul id="settings">Settings</ul> 
+		</div>
 		
 	</body>
 </html>
