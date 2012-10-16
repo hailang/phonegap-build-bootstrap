@@ -4,46 +4,46 @@
     <title>PointCow Design Demo</title>
 	<!-- Stylesheets -->
     <link rel="stylesheet" href="assets/css/kendo.mobile.all.min.css">
+    <link rel="stylesheet" href="assets/css/master.css">
 	<!-- ++++++++++++ -->
 </head>
 
 <body>	
 	<div data-role="view" data-layout="default_layout" data-title="My Wallet" id="wallet">
-		<header data-role="header">
-			<div data-role="navbar">
-				<span data-role="view-title"></span>
-				<a data-align="right" class="nav-button" href="settings.html" data-role="button">Add</a>
-			</div>
-		</header>
+        <header data-role="header">
+            <div data-role="navbar">
+                <span data-role="view-title"></span>
+                <a data-align="right" class="nav-button" href="settings.html" data-role="button">Add</a>
+            </div>
+        </header>
 
-		<ul data-role="listview" data-style="inset" data-type="group">
-			<p>The list is currently empty.</p>
-			<p>The gift cards you earn with PointCow credits will be shown here.</p>
-			<p>You can also add your own plastic cards by pressing the add button on the top</p>
-		</ul>
-	</div>
+        <ul data-role="listview" data-style="inset" data-type="group">
+            <p>The list is currently empty.</p>
+            <p>The gift cards you earn with PointCow credits will be shown here.</p>
+            <p>You can also add your own plastic cards by pressing the add button on the top</p>
+        </ul>
+    </div>
+
 	<!-- Define Layout -->
 	<section data-role="layout" data-id="default_layout">
 	        <header data-role="header">
 	            <div data-role="navbar">
-					<span data-role="view-title"></span>
-				</div>
+                    <span data-role="view-title"></span>
+                </div>
 	        </header>
 	        <!-- Render Views Here -->
 	        <footer data-role="footer">
 	            <div data-role="tabstrip">
 	                <a href="#wallet" data-icon="home">My Wallet</a>
-					<a href="gifts.html" data-icon="favorites">Earn Gifts</a>
-					<a href="shop.html" data-icon="cart">Go Shop</a>
-					<a href="community.html" data-icon="globe">Community</a>
-					<a href="settings.html" data-icon="settings">Settings</a>
+                    <a href="gifts.html" data-icon="favorites">Earn Gifts</a>
+                    <a href="shop.html" data-icon="cart">Go Shop</a>
+                    <a href="community.html" data-icon="globe">Community</a>
+                    <a href="settings/index.html" data-icon="settings">Settings</a>
 	            </div> 
 	        </footer>
-			<!-- ++++++++++++ -->
+            <!-- ++++++++++++ -->
 	</section>
 	<!-- ++++++++++++ -->
-	
-
 	
 	<!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
@@ -51,13 +51,11 @@
 	<script src="phonegap.js" type="text/javascript" charset="utf-8"></script>
 	<script>
 	    var app = new kendo.mobile.Application(document.body, 
-		{
-		    //transition:'slide'
-			//platform:'android'
-		});
+        {
+            //transition:'slide'
+            //platform:'android'
+        });
 	</script>
 	<!-- ++++++++++++ -->
 </body>
 </html>
-		
-		
